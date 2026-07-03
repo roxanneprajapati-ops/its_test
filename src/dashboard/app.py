@@ -44,9 +44,12 @@ def load_processed_data() -> pd.DataFrame:
 @st.cache_data
 def load_metrics() -> dict:
     path = config.OUTPUT_DIR / "metrics.json"
+
     if not path.exists():
+        st.warning(f"metrics.json not found at: {path}")
         return {}
-    with open(path) as f:
+
+    with open(path, "r") as f:
         return json.load(f)
 
 
@@ -68,6 +71,13 @@ def load_security_results() -> pd.DataFrame:
 
 @st.cache_resource
 def load_classifier() -> RandomForestCongestionClassifier:
+    """Load trained congestion classifier."""
+    model_path = config.MODELS_DIR / "congestion_random_forest_classifier.joblib"
+
+    if not model_path.exists():
+        st.error(f"Model file not found at: {model_path}")
+        st.stop()
+
     clf = RandomForestCongestionClassifier()
     clf.load()
     return clf
