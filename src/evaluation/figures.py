@@ -1,7 +1,7 @@
 """
 figures.py
 ----------
-Generate the plot file rubric expect in outputs/figures/. Use
+Generate the plot file rubric expect in output/figures/. Use
 matplotlib only (no seaborn dependency) to keep requirements.txt small
 and the project light enough to run on a normal laptop.
 """

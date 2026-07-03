@@ -16,7 +16,7 @@ from pathlib import Path
 # ---------------------------------------------------------------------
 BASE_DIR = Path(__file__).resolve().parent.parent.parent  # project root
 DATA_DIR = BASE_DIR / "data"
-OUTPUT_DIR = BASE_DIR / "outputs"
+OUTPUT_DIR = BASE_DIR / "output"
 FIGURES_DIR = OUTPUT_DIR / "figures"
 MODELS_DIR = OUTPUT_DIR / "trained_models"
 DOCS_DIR = BASE_DIR / "docs"
