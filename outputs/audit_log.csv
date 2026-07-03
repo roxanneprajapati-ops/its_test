@@ -1,0 +1,23 @@
+timestamp,event_type,intersection_id,detail
+2026-07-03T22:14:36,SECURITY_ALERT,INT_01,"Schema validation failed: 1 validation error for PredictionRequestSchema
+vehicle_count
+  Input should be less than or equal to 500 [type=less_than_equal, input_value=99999, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/less_than_equal"
+2026-07-03T22:14:36,SECURITY_ALERT,INT_01,"Schema validation failed: 1 validation error for PredictionRequestSchema
+avg_speed
+  Input should be less than or equal to 150 [type=less_than_equal, input_value=500.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.10/v/less_than_equal"
+2026-07-03T22:14:36,SECURITY_ALERT,INT_01,Missing or invalid API key
+2026-07-03T22:14:36,REQUEST,INT_01,"{'intersection_id': 'INT_01', 'vehicle_count': 40, 'avg_speed': 35.0, 'queue_length': 5, 'occupancy_pct': 30.0, 'delay_seconds': 10.0, 'weather_severity': 0, 'hour': 8, 'is_peak_hour': 1, 'is_weekend': 0, 'timestamp': '2026-01-01T09:00:00'}"
+2026-07-03T22:14:36,SECURITY_ALERT,INT_01,Duplicate timestamp (possible replay attack)
+2026-07-03T22:17:17,SECURITY_ALERT,INT_01,"Schema validation failed: 1 validation error for PredictionRequestSchema
+vehicle_count
+  Input should be less than or equal to 500 [type=less_than_equal, input_value=99999, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/less_than_equal"
+2026-07-03T22:17:17,SECURITY_ALERT,INT_01,"Schema validation failed: 1 validation error for PredictionRequestSchema
+avg_speed
+  Input should be less than or equal to 150 [type=less_than_equal, input_value=500.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.10/v/less_than_equal"
+2026-07-03T22:17:17,SECURITY_ALERT,INT_01,Missing or invalid API key
+2026-07-03T22:17:17,REQUEST,INT_01,"{'intersection_id': 'INT_01', 'vehicle_count': 40, 'avg_speed': 35.0, 'queue_length': 5, 'occupancy_pct': 30.0, 'delay_seconds': 10.0, 'weather_severity': 0, 'hour': 8, 'is_peak_hour': 1, 'is_weekend': 0, 'timestamp': '2026-01-01T09:00:00'}"
+2026-07-03T22:17:17,SECURITY_ALERT,INT_01,Duplicate timestamp (possible replay attack)

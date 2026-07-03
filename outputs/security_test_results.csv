@@ -1,0 +1,12 @@
+attack_name,expected_blocked,actually_blocked,passed,reason
+fake_vehicle_count,True,True,True,"Invalid request payload: 1 validation error for PredictionRequestSchema
+vehicle_count
+  Input should be less than or equal to 500 [type=less_than_equal, input_value=99999, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/less_than_equal"
+impossible_speed,True,True,True,"Invalid request payload: 1 validation error for PredictionRequestSchema
+avg_speed
+  Input should be less than or equal to 150 [type=less_than_equal, input_value=500.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.10/v/less_than_equal"
+missing_api_key,True,True,True,Unauthorized: missing or invalid API key
+duplicate_timestamp,True,True,True,Duplicate timestamp rejected (possible spoofed/replay data)
+tampered_hash,True,True,True,Hash mismatch correctly detected
